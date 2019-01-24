@@ -11,7 +11,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit.version>4.12</junit.version>
-		<org.jboss.resteasy.version>3.0.16.Final</org.jboss.resteasy.version>
+		<org.jboss.resteasy.version>3.5.1.Final</org.jboss.resteasy.version>
 		<spring.version>4.2.5.RELEASE</spring.version>
 		<org.apache.httpcomponents.version>4.5.5</org.apache.httpcomponents.version>
 		<aws-java-sdk.version>1.11.313</aws-java-sdk.version>
@@ -80,7 +80,8 @@
 			<version>${org.apache.httpcomponents.version}</version>
 		</dependency>
 
-
+		<!-- http://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
+		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
 
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
@@ -93,16 +94,17 @@
 			<artifactId>resteasy-jackson-provider</artifactId>
 			<version>${org.jboss.resteasy.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-multipart-provider</artifactId>
-			<version>${org.jboss.resteasy.version}</version>
-		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-spring -->
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-spring</artifactId>
+			<version>${org.jboss.resteasy.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-multipart-provider</artifactId>
 			<version>${org.jboss.resteasy.version}</version>
 		</dependency>
 
@@ -131,12 +133,12 @@
 			<artifactId>commons-fileupload</artifactId>
 			<version>${commons-fileupload.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.0.1</version>
 		</dependency>
-		
 
 		<!-- https://mvnrepository.com/artifact/com.nimbusds/nimbus-jose-jwt -->
 		<dependency>
