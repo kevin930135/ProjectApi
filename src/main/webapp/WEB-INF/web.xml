@@ -78,27 +78,27 @@
     </servlet-mapping>
 	
 	<!-- 配置加载proxool配置文件 -->
-	<servlet>
-		<servlet-name>proxoolServletConfigurator</servlet-name>
-		<servlet-class>
-			org.logicalcobwebs.proxool.configuration.ServletConfigurator</servlet-class>
-		<init-param>
-			<param-name>xmlFile</param-name>
-			<param-value>WEB-INF/proxool-conf.xml</param-value>
-		</init-param>
-		<load-on-startup>0</load-on-startup>
-	</servlet>
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>proxoolServletConfigurator</servlet-name> -->
+<!-- 		<servlet-class> -->
+<!-- 			org.logicalcobwebs.proxool.configuration.ServletConfigurator</servlet-class> -->
+<!-- 		<init-param> -->
+<!-- 			<param-name>xmlFile</param-name> -->
+<!-- 			<param-value>WEB-INF/proxool-conf.xml</param-value> -->
+<!-- 		</init-param> -->
+<!-- 		<load-on-startup>0</load-on-startup> -->
+<!-- 	</servlet> -->
 	
-	<servlet>
-	    <servlet-name>adminP</servlet-name>
-	     <servlet-class>
-	         org.logicalcobwebs.proxool.admin.servlet.AdminServlet
-	     </servlet-class>
-	</servlet>
-	<servlet-mapping>
-	   <servlet-name>adminP</servlet-name>
-	   <url-pattern>/adminp</url-pattern>
-	</servlet-mapping>
+<!-- 	<servlet> -->
+<!-- 	    <servlet-name>adminP</servlet-name> -->
+<!-- 	     <servlet-class> -->
+<!-- 	         org.logicalcobwebs.proxool.admin.servlet.AdminServlet -->
+<!-- 	     </servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 	   <servlet-name>adminP</servlet-name> -->
+<!-- 	   <url-pattern>/adminp</url-pattern> -->
+<!-- 	</servlet-mapping> -->
 	
 	<jsp-config>
 		<jsp-property-group>
