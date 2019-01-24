@@ -24,6 +24,8 @@ import javax.ws.rs.core.Response;
 
 import org.jboss.resteasy.annotations.GZIP;
 import org.jboss.resteasy.annotations.providers.multipart.MultipartForm;
+import org.jboss.resteasy.plugins.providers.multipart.InputPart;
+import org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -118,7 +120,7 @@ public class EngineController {
 		ArrayList<String> faceIDList = new ArrayList<String>();
 		faceList = getResult.main(null);
 		faceList = gson.fromJson(new Gson().toJson(faceList), faceListType);
-//		//皜祈岫敺PI撠勗��SON�� ��
+//		//測試從API就先取JSON值 勿刪
 
 		for (Face face : faceList) {
 			faceIDList.add(face.getPersonId());

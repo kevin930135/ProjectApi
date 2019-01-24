@@ -80,19 +80,7 @@
 			<version>${org.apache.httpcomponents.version}</version>
 		</dependency>
 
-		<!-- http://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
-		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-java-sdk</artifactId>
-			<version>${aws-java-sdk.version}</version>
-		</dependency>
 
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-java-sdk-logs</artifactId>
-			<version>${aws-java-sdk.version}</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
