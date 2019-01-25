@@ -15,8 +15,10 @@ C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\util\entity\Li
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\engine\entity\Face.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\util\CmdUtil.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\engine\entity\ModelSwitch.java
+C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\dao\impl\ClassDAOImpl.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\controller\EngineController.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\engine\entity\ModelMerge.java
+C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\dao\StudentDAO.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\util\AttributeCheck.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\util\entity\OrderGenerator.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\util\SqlUtil.java
@@ -27,6 +29,7 @@ C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\util\entity\Wh
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\entity\StorageService.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\entity\TrainModel.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\util\entity\Error.java
+C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\dao\impl\StudentDAOImpl.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\engine\entity\TrainFace.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\engine\entity\FrameFace.java
 C:\Users\User\git\ProjectApi\src\main\java\com\example\ProjectApi\entity\Rollcall.java

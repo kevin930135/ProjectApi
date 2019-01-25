@@ -4,9 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!-- 	<bean id="trainRetxt" class="com.example.ProjectApi.retxtImpl"> -->
+	<bean id="studentDAO" class="com.example.ProjectApi.dao.impl.StudentDAOImpl">
 <!-- 		<property name="dataSource" ref="dataSource" /> -->
-<!-- 	</bean> -->
+	</bean>
 
 	
 </beans>

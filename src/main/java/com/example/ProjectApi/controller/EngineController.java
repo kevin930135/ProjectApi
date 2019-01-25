@@ -64,6 +64,8 @@ public class EngineController {
 	private final String UPLOADED_Photo_Retrieve_PATH = "C:\\eGroupAI_FaceEngine_v3.1.0\\RetrievePhoto\\";
 
 	private GetResult getResult = new GetResult();
+	
+//	FirebaseApp firebaseApp;//初始化fireStore
 
 	@POST
 	@Path("/TrainFace")
@@ -115,7 +117,7 @@ public class EngineController {
 	public Response RetrievePhoto(@MultipartForm TrainModel trainmodel, @Context HttpServletRequest request,
 			@Context HttpServletResponse response) throws IOException {
 
-//		final StudentDAO studentDAO = (StudentDAO) context.getBean("studentDAO");
+		final StudentDAO studentDAO = (StudentDAO) context.getBean("studentDAO");
 		final WebResponse webResponse = new WebResponse();
 		List<Face> faceList = new ArrayList<>();
 		String fileName = UPLOADED_Photo_Retrieve_PATH;
@@ -147,9 +149,9 @@ public class EngineController {
 			System.out.println(face.getPersonId());
 			student.setStudent_id(face.getPersonId());
 			System.out.println("FLAG2");
-		}
+		} 
 
-		StudentDAO.get(student);
+	    studentDAO.get(student);
 
 		System.out.println(faceIDList);
 		webResponse.setData(faceList);
@@ -179,14 +181,18 @@ public class EngineController {
 	public Response TestDB(@Context HttpServletRequest request, @Context HttpServletResponse response)
 			throws IOException, InterruptedException, ExecutionException {
 		String ProjectResourcePath = this.getClass().getClassLoader().getResource(".").getPath();
-		FirebaseApp firebaseApp;
+		
+		
 		FileInputStream serviceAccount = new FileInputStream(
 				ProjectResourcePath+"firestore/serviceAccountKey.json");
 		FirebaseOptions options = new FirebaseOptions.Builder()
 				.setCredentials(GoogleCredentials.fromStream(serviceAccount))
 				.setDatabaseUrl("https://projectdb-83c55.firebaseio.com").build();
-
+		FirebaseApp.initializeApp("NUll");
 		FirebaseApp.initializeApp(options);
+//		if(!FirebaseApp.apps.length){
+//			FirebaseApp.initializeApp(options);
+//			}
 		Firestore db = FirestoreClient.getFirestore();
 
 		DocumentReference docref = db.collection("Student").document("X6jUGHNHkz5XrZdQqk4r");

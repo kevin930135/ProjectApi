@@ -3,11 +3,11 @@ com\example\ProjectApi\util\entity\OrderGenerator.class
 com\example\ProjectApi\util\CmdUtil.class
 com\example\ProjectApi\util\entity\Error.class
 com\example\ProjectApi\util\entity\WebResponse.class
-com\example\ProjectApi\controller\EngineController.class
 com\example\ProjectApi\updatetxtImpl\UpdateTxtImpl.class
 com\example\ProjectApi\util\entity\EqualGenerator.class
 com\example\ProjectApi\engine\entity\TrainFace.class
 com\example\ProjectApi\util\entity\LikeGenerator.class
+com\example\ProjectApi\dao\impl\ClassDAOImpl.class
 com\example\ProjectApi\engine\entity\ModelSwitch.class
 com\example\ProjectApi\util\SqlUtil.class
 com\example\ProjectApi\entity\ClassTeam.class
@@ -26,6 +26,7 @@ com\example\ProjectApi\engineControl\EngineFunc.class
 com\example\ProjectApi\util\TxtUtil.class
 com\example\ProjectApi\entity\Class.class
 com\example\ProjectApi\util\entity\LimitGenerator.class
+com\example\ProjectApi\dao\ClassDAO.class
 com\example\ProjectApi\engineControl\GetResult$4.class
 com\example\ProjectApi\entity\ClassRecord.class
 com\example\ProjectApi\entity\ClassRecallRecord.class
